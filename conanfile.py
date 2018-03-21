@@ -70,7 +70,7 @@ tools=True
             self.copy("liboath.so*", dst="lib", src=".libs", keep_path=False, links=True)
             self.copy("liboath.a", dst="lib", src=".libs", keep_path=False)
         if self.options.libpskc:
-            self.copy("pskc.h", dst="include" , src="%s/libpskc" % source_folder_name, keep_path=False)
+            self.copy("pskc.h", dst="include" , src="%s/libpskc/include/pskc" % source_folder_name, keep_path=False)
             self.copy("libpskc.so*", dst="lib", src=".libs", keep_path=False, links=True)
             self.copy("libpskc.a", dst="lib", src=".libs", keep_path=False)
         if self.options.tools:
